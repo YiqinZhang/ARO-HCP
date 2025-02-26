@@ -17,6 +17,12 @@ on:
       - 'dev-infrastructure/**/*.bicepparam'
       - 'dev-infrastructure/Makefile'
       - '.github/workflows/aro-hcp-dev-what-if.yml'
+  workflow_dispatch:
+   inputs:
+     debug:
+       required: false
+       default: "false"
+      
 
 jobs:
   what-if:
